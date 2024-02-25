@@ -1,0 +1,165 @@
+/*fuentes externas */
+
+h1 {
+    color: grey;
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: rgb(61, 60, 60);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    background-color: blueviolet;
+    color: brown;
+}
+
+li {
+   font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+<img src="./img/caballero.jpg" alt="caballero en su area">
+
+<!--Codigo de dropdown menu-->
+
+<ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+
+
+CSS original
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables a modificar
+encabe_1 header
+Lista_menu lista en header
+ind_3 descripcion
+ind_4 colosos box
+ind_5 galeria
+ind_6 redes sociales
+ind_7 texto
+ind_8 input
+Logo refiere a logo de la pagina
+buscador refiere a barra buscadora
+ */
+
+
+
+/*fuentes externas */
+.encabe_1 {
+    background-color: brown;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+
+.Lista_menu ul li {
+    margin: 0 0.5rem 0 0;
+}
+
+.logo {
+    background-color: blueviolet;
+}
+
+.buscador {
+   margin: auto;
+   justify-self: auto;
+}
+
+.ind_2 {
+    display: flex; 
+    background-color: cadetblue;
+    flex-direction: row;
+    justify-content: space-evenly   ;
+    list-style-type: none;
+
+}
+
+.ind_3 {
+    display: flex;
+    background-image: url(../img/caballero.jpg);
+    
+}
+
+.ind_4 {
+display: flex; justify-content: space-between; background-color: blue;
+}
+
+
+.gal_1 {
+    display: flex; 
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.elemento {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    width: 500px;
+    height: 500px;
+}
+
+.ind_6 {
+    display: flex; justify-content: space-evenly;
+    background-color: rgb(221, 0, 0); justify-content: space-between;
+}
+
+.ind_6 ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0.5rem 0 0;
+    list-style-type: none;
+}
+
+------------------------------
+
+posible formulario!!
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="mb-3">
+  <label for="basic-url" class="form-label">Your vanity URL</label>
+  <div class="input-group">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+  </div>
+  <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">With textarea</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
